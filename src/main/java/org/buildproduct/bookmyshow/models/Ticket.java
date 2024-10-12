@@ -11,6 +11,7 @@ import java.util.List;
 @Setter
 @Entity
 public class Ticket extends BaseModel{
+    private String ticketNumber;
     private Date timestamp;
     @ManyToOne
     private User user;

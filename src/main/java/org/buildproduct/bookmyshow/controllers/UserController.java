@@ -1,7 +1,7 @@
 package org.buildproduct.bookmyshow.controllers;
 
 import org.buildproduct.bookmyshow.dtos.LoginSignUpDtos.*;
-import org.buildproduct.bookmyshow.dtos.LoginSignUpDtos.ResponseStatus;
+import org.buildproduct.bookmyshow.dtos.ResponseStatus;
 import org.buildproduct.bookmyshow.models.User;
 import org.buildproduct.bookmyshow.services.UserServiceInterface;
 import org.springframework.web.bind.annotation.*;
