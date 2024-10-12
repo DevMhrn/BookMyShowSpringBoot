@@ -1,9 +1,8 @@
 package org.buildproduct.bookmyshow.controllers;
 
-import org.buildproduct.bookmyshow.dtos.*;
-import org.buildproduct.bookmyshow.dtos.ResponseStatus;
+import org.buildproduct.bookmyshow.dtos.LoginSignUpDtos.*;
+import org.buildproduct.bookmyshow.dtos.LoginSignUpDtos.ResponseStatus;
 import org.buildproduct.bookmyshow.models.User;
-import org.buildproduct.bookmyshow.services.UserService;
 import org.buildproduct.bookmyshow.services.UserServiceInterface;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +15,7 @@ public class UserController {
     }
 
     @PostMapping("/signup")
-    public SignupResponseDto  signup(@RequestBody SignupRequestDto signupRequestDto) {
+    public SignupResponseDto signup(@RequestBody SignupRequestDto signupRequestDto) {
 
         User user = userService.signup(
             signupRequestDto.getName(),
@@ -38,11 +37,8 @@ public class UserController {
 
         ResponseStatus responseStatus = userService.login(requestDto.getEmail(), requestDto.getPassword());
 
-
         LoginResponseDto loginResponseDto = new LoginResponseDto();
         loginResponseDto.setStatus(responseStatus);
         return loginResponseDto;
     }
-
-
 }

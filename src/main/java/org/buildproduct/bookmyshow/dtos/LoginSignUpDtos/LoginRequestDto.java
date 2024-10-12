@@ -1,4 +1,4 @@
-package org.buildproduct.bookmyshow.dtos;
+package org.buildproduct.bookmyshow.dtos.LoginSignUpDtos;
 
 import lombok.Getter;
 import lombok.Setter;

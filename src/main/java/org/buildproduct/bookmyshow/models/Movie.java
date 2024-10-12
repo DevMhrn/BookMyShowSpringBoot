@@ -11,4 +11,5 @@ import java.util.List;
 public class Movie extends BaseModel{
     private String name;
     private List<String> languages;
+    private List<Feature> features;
 }

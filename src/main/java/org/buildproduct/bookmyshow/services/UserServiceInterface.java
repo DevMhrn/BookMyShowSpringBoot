@@ -1,7 +1,6 @@
 package org.buildproduct.bookmyshow.services;
 
-import org.buildproduct.bookmyshow.dtos.ResponseStatus;
-import org.buildproduct.bookmyshow.dtos.SignupRequestDto;
+import org.buildproduct.bookmyshow.dtos.LoginSignUpDtos.ResponseStatus;
 import org.buildproduct.bookmyshow.models.User;
 
 public interface UserServiceInterface {
