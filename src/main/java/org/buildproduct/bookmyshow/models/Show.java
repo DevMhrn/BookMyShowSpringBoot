@@ -8,8 +8,9 @@ import java.util.Date;
 import java.util.List;
 @Getter
 @Setter
-@Entity
+@Entity(name = "shows")
 public class Show extends BaseModel{
+
     @ManyToOne
     private Movie movie; //needs movie to define the cardinality
     private Date startTime;

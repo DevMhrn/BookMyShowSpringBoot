@@ -1,0 +1,11 @@
+package org.buildproduct.bookmyshow.services;
+
+import org.buildproduct.bookmyshow.dtos.ResponseStatus;
+import org.buildproduct.bookmyshow.dtos.SignupRequestDto;
+import org.buildproduct.bookmyshow.models.User;
+
+public interface UserServiceInterface {
+    public User signup(String name, String email, String password);
+
+    public ResponseStatus login(String email, String password);
+}
